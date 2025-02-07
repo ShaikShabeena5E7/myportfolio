@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shabeena's Portfolio</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="contact.css"> 
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="logo">SK</div>
+    <ul class="nav-links">
+        <li><a href="#hero">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <
+    </ul>
+</header>
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm Shabeena</h1>
+         <h2 class="bounce-text" data-texts='["A Software Engineer", "A Web Developer", "A Problem Solver"]'></h2>
+         <p>I build amazing minimalistic websites and applications.</p>
+         <p>Specializing in front-end development, back-end systems, and data analytics. I adapt and learn based on the job’s needs.</p>
+   
+          <!-- <button class="cta-button">View My Work</button>-->
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="projects-box">
+         <!-- Firefly animation canvas -->
+         <canvas id="fireflyCanvas"></canvas>
+        <!-- Project 1: Workforce Attrition Analysis -->
+        <div class="project-card left">
+            <h3>Workforce Attrition Analysis</h3>
+            <div class="project-details">
+                <p>
+                    This project involved analyzing workforce attrition data using visualizations to uncover key patterns and insights. 
+                    The study revealed that employees working overtime had a significantly lower attrition rate (10%) compared to those 
+                    who did not (30%). Additionally, salary hikes exceeding 15% were associated with decreased attrition rates, while 
+                    employees with experience in 5+ companies showed a reduced attrition rate of 10%.
+                </p>
+                <p>
+                    To address attrition, actionable strategies were developed, including compensation updates, well-being initiatives 
+                    for non-overtime workers, and structured career advancement opportunities. The analysis leveraged Python tools like 
+                    <strong>Matplotlib</strong> and <strong>Seaborn</strong> for effective data visualization. Critical factors such as 
+                    overtime-driven attrition rates were engineered into features, enhancing the study's depth. Additionally, collaboration 
+                    with teams helped establish foundational website structures for presenting insights.
+                </p>
+            </div>
+            <a href="https://github.com/ShaikShabeena5E7/Employee-Attrition-Analysis" target="_blank">View Project</a>
+        </div>
+        
+        <!-- Project 2: Placeholder for Project 2 -->
+        <div class="project-card">
+            <h3>Fake News Detection using ML & Python</h3>
+             <p>The project involved applying TF-IDF methods, the Passive-Aggressive classifier, and the Confusion Matrix to a dataset containing news and article information. The dataset included 589 true positives, 587 true negatives, 42 false positives, and 49 false negatives. This project helped gain an understanding of how Natural Language Processing (NLP) and various machine learning (ML) algorithms could be applied to solve problems.
+             Key steps in the process included:</p>
+             Imported essential Python packages and frameworks, such as NumPy, pandas, scikit-learn, and transformers.
+             Preprocessed the text data by tokenizing and cleaning it to enhance the performance of NLP techniques.
+             Leveraged machine learning algorithms such as Support Vector Machines (SVM), Naive Bayes, Random Forest, in addition to the mentioned Passive-Aggressive Classifier.
+             Achieved a model accuracy of 74.82%.</p>
+            <a href="#" target="_blank">View Project</a>
+
+        </div>
+        
+        <!-- Project 3: Placeholder for Project 3 -->
+        <div class="project-card">
+           
+            <h3>Factors Affecting stock Price Prediction Using DL</h3>
+             <p>The project focused on predicting stock prices using deep learning techniques. A dataset of over 5,000 samples from diverse organizations and companies, including historical stock price data, was collected.
+             Key steps in the process included:
+             Collected a dataset of over 5,000 samples from diverse organizations and companies, including historical stock price data.
+             Analyzed various models to identify the most suitable fit for the dataset.
+             Executed real-time experiments to determine accuracy by utilizing existing data as input and evaluating the output.
+             Compiled stock price data from Nifty 50 companies on Kaggle, covering the period from 2010 to 2021 for HDFC, Reliance, Infosys, and TATA stocks.
+             Split the dataset into training and test sets, with training data ranging from 3,000 to 5,000 samples.
+             Developed Machine Learning (ML) and Deep Learning (DL) models, including ARIMA, LSTM, and AR.
+             Predicted stock price fluctuations for the next 365 days by testing models on historical data and debugging to calculate accuracy.</p>
+             <a href="#" target="_blank">View Project</a>
+
+
+        </div>
+    </div>
+</section>
+<script src="firefly.js"></script>
+<script src="hero.js"></script>
+<a href="mailto:shaikshabeena438@gmail.com" class="contact-button">Contact</a>
+
+
+</body>
+</html>
+

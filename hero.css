@@ -1,0 +1,46 @@
+#hero {
+    background-color: #354857; /* Dark color background */
+    height: 60vh; /* 60% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Text color */
+}
+
+.hero-content h1, .hero-content h2 {
+    margin: 0;
+    font-size: 3rem; /* Adjust size as needed */
+}
+
+.hero-content p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    background-color: #f57c00; /* Button color */
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff5722; /* Button hover color */
+}
+
+
+#typing-text::after {
+    content: "|";
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

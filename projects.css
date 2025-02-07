@@ -1,0 +1,68 @@
+
+.projects-box {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Centers content vertically if needed */
+    text-align: center; /* Aligns the text inside */
+    margin: 0 auto; 
+    flex-direction: column;
+    align-items: center; /* Centers the project boxes horizontally */
+    position: relative; /* Ensure it layers properly */
+    z-index: 2; /* Keeps content above animation */
+    
+/* Firefly animation canvas must be inside #projects but layered behind */
+#fireflyCanvas {
+    position: absolute; /* Ensures it's placed inside #projects */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Lower than .projects-box so it's behind content */
+    pointer-events: none; /* Prevents interaction issues */
+}
+
+.project-card {
+    background-color: #354857;
+    color: rgb(242, 242, 242);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    position: relative; /* Ensure cards stay above animation */
+    z-index: 2; /* Above the firefly canvas */
+}
+
+    .project-card a:focus,
+    .project-card a:active,
+    .project-card a:hover,
+    .project-card a:visited {
+    background-color: transparent;
+    outline: none;
+    background-color: #ff8c00; /* Hover effect */
+    color: white; /* Change text color on hover */
+}
+
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+.project-card {
+    animation: float 3s infinite ease-in-out;
+}
+.project-card {
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    border-color: #1e1a01;
+    box-shadow: 0 0 15px #998c2a;
+}
+
+
+

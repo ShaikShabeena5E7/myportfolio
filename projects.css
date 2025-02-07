@@ -42,7 +42,7 @@
     .project-card a:visited {
     background-color: transparent;
     outline: none;
-    background-color: #ff8c00; /* Hover effect */
+    background-color: #ffffff; /* Hover effect */
     color: white; /* Change text color on hover */
 }
 

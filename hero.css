@@ -1,16 +1,18 @@
+/* Hero Section */
 #hero {
-    background-color: #354857; /* Dark color background */
-    height: 60vh; /* 60% of the viewport height */
+    background-color: #354857; /* Dark background */
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white; /* Text color */
+    color: white;
 }
 
+/* Text Styling */
 .hero-content h1, .hero-content h2 {
     margin: 0;
-    font-size: 3rem; /* Adjust size as needed */
+    font-size: 3rem;
 }
 
 .hero-content p {
@@ -18,8 +20,9 @@
     font-size: 1.2rem;
 }
 
+/* Call-to-Action Button */
 .cta-button {
-    background-color: #f57c00; /* Button color */
+    background-color: #f57c00;
     border: none;
     padding: 12px 24px;
     font-size: 1.1rem;
@@ -29,10 +32,10 @@
 }
 
 .cta-button:hover {
-    background-color: #ff5722; /* Button hover color */
+    background-color: #ff5722;
 }
 
-
+/* Typing Effect */
 #typing-text::after {
     content: "|";
     display: inline-block;
